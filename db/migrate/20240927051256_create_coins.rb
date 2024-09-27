@@ -3,7 +3,7 @@ class CreateCoins < ActiveRecord::Migration[7.2]
     create_table :coins do |t|
       t.string :description
       t.string :acronym
-      t.string :url_imagee
+      t.string :url_image
 
       t.timestamps
     end
