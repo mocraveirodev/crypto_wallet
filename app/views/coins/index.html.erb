@@ -1,5 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
+<p><strong>Data:</strong> <%= date_format_br(Date.today) %></p>
+
 <h1>Moedas</h1>
 <table>
   <thead>
@@ -11,7 +13,7 @@
     </tr>
   </thead>
   <tbody>
-    <%= @coins.each do |coin| %>
+    <% @coins.each do |coin| %>
       <tr>
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
@@ -24,4 +26,4 @@
   </tbody>
 </table>
 
-<%= link_to "New coin", new_coin_path %>
+<%= link_to "Cadaste uma nova moeda!", new_coin_path %>
