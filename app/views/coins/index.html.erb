@@ -1,5 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
+<% content_for :title, "Moedas" %>
+
 <p><strong>Data:</strong> <%= date_format_br(Date.today) %></p>
 
 <h1>Moedas</h1>
@@ -26,4 +28,5 @@
   </tbody>
 </table>
 
-<%= link_to "Cadaste uma nova moeda!", new_coin_path %>
+<%= link_to "Cadaste uma nova moeda!", new_coin_path%>
+<%= link_to "Voltar para Início", welcome_index_path%>
