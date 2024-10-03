@@ -1,18 +1,23 @@
 <div id="<%= dom_id coin %>">
   <p>
-    <strong>Description:</strong>
+    <strong>Nome:</strong>
     <%= coin.description %>
   </p>
 
   <p>
-    <strong>Acronym:</strong>
+    <strong>Sigla:</strong>
     <%= coin.acronym %>
   </p>
 
   <p>
-    <strong>Url image:</strong>
+    <strong>Logo:</strong>
     <%= coin.url_image %>
     <%= image_tag coin.url_image, size: "25x25" %>
+  </p>
+
+  <p>
+    <strong>Tipo de Mineração:</strong>
+    <%= coin.mining_type.description %>
   </p>
 
 </div>
