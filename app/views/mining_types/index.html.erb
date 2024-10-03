@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Tipos de Mineração" %>
+<% content_for :title, t('links.mining_types') %>
 
-<h1>Tipos de Mineração</h1>
+<h1><%= t('links.mining_types') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Tipo de Mineração</th>
-      <th>Sigla</th>
+      <th><%= @mining_types.human_attribute_name(:description) %></th>
+      <th><%= @mining_types.human_attribute_name(:acronym) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,5 +25,5 @@
   </tbody>
 </table>
 
-<%= link_to "Novo Tipo de Mineração", new_mining_type_path %>
-<%= link_to "Voltar para Início", welcome_index_path %>
+<%= link_to t('links.new_mining_type'), new_coin_path%>
+<%= link_to t('links.back'), welcome_index_path%>
