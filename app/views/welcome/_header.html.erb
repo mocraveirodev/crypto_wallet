@@ -1,4 +1,4 @@
-<h1><%= t('hello') %> <%= @nome %> !</h1>
-<p><strong>Data BR:</strong> <%= date_format_br(Date.today) %></p>
-<p><strong>Data com localização:</strong> <%= l(Date.today)%></p>
-<p>O idioma da aplicação é: <strong><%= locale %></strong></p>
+<h1><%= t('hello') %> <%= @nome %>!</h1>
+<p><%= t('actual_date') %>: <strong><%= l(Date.today) %></strong></p>
+<p><%= t('actual_lang') %>: <strong><%= t('lang') %></strong></p>
+<p><%= t('environment') %>: <strong><%= env_rails_version %></strong></p>

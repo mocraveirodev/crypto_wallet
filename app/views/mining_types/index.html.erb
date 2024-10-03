@@ -1,8 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, t('links.mining_types') %>
+<% content_for :title, t('mining_types') %>
 
-<h1><%= t('links.mining_types') %></h1>
+<h1><%= t('mining_types') %></h1>
 
 <table>
   <thead>
@@ -25,5 +25,5 @@
   </tbody>
 </table>
 
-<%= link_to t('links.new_mining_type'), new_coin_path%>
+<%= link_to t('new_mining_type'), new_mining_type_path%>
 <%= link_to t('links.back'), welcome_index_path%>

@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, t('links.coins') %>
+<% content_for :title, t('coins') %>
 
-<p><strong>Data:</strong> <%= date_format_br(Date.today) %></p>
+<p><strong><%= t('actual_date') %>:</strong> <%= l(Date.today) %></p>
 
-<h1><%= t('links.coins') %></h1>
+<h1><%= t('coins') %></h1>
+
+<%= link_to t('links.new_coin'), new_coin_path%>
+<%= link_to t('links.back'), welcome_index_path%>
+
 <table>
   <thead>
     <tr>
@@ -29,6 +33,3 @@
     <% end %>
   </tbody>
 </table>
-
-<%= link_to t('links.new_coin'), new_coin_path%>
-<%= link_to t('links.back'), welcome_index_path%>

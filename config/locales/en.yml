@@ -29,18 +29,27 @@
 
 en:
   hello: "Hello world"
-  lang:
-    en: "English"
+  default_name: "User"
+  actual_date: "Date"
+  actual_lang: "Language"
+  lang: "English"
+  environment: "Environment"
+  coins: "Coins"
+  mining_types: "Mining Types"
   env:
     dev: "Development"
     test: "Test"
     prod: "Production"
+  new_mining_type: "New Mining Type"
+  new_coin: "New Coin"
+  edit_mining_type: "Edit Mining Type"
+  edit_coin: "Edit Coin"
+  delete_mining_type: "Delete Mining Type"
+  delete_coin: "Delete Coin"
+  show_mining_type: "Show Mining Type"
+  show_coin: "Show Coin"
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
     back: "Back"
-    coins: "Coins"
-    mining_types: "Mining Types"
-    new_mining_type: "New Mining Type"
-    new_coin: "New Coin"
