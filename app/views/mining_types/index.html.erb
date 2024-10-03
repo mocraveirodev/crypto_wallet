@@ -17,9 +17,9 @@
       <tr>
         <td><%= mining_type.description %></td>
         <td><%= mining_type.acronym %></td>
-        <td><%= link_to 'Mostrar', mining_type %></td>
-        <td><%= link_to 'Editar', edit_mining_type_path(mining_type) %></td>
-        <td><%= link_to 'Excluir', mining_type, data: { turbo_method: :delete, turbo_confirm: "Tem certeza que quer excluir?" } %></td>
+        <td><%= link_to t('links.show'), mining_type %></td>
+        <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type) %></td>
+        <td><%= link_to t('links.delete'), mining_type, data: { turbo_method: :delete, turbo_confirm: "Tem certeza que quer excluir?" } %></td>
       </tr>
     <% end %>
   </tbody>

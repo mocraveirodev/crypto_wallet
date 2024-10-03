@@ -29,3 +29,18 @@
 
 en:
   hello: "Hello world"
+  lang:
+    en: "English"
+  env:
+    dev: "Development"
+    test: "Test"
+    prod: "Production"
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    back: "Back"
+    coins: "Coins"
+    mining_types: "Mining Types"
+    new_mining_type: "New Mining Type"
+    new_coin: "New Coin"

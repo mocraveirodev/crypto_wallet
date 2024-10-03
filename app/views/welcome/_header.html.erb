@@ -1,2 +1,4 @@
-<h1>Boas vindas <%= @nome %>!</h1>
-<p><strong>Data:</strong> <%= date_format_br(Date.today) %></p>
+<h1><%= t('hello') %> <%= @nome %> !</h1>
+<p><strong>Data BR:</strong> <%= date_format_br(Date.today) %></p>
+<p><strong>Data com localização:</strong> <%= l(Date.today)%></p>
+<p>O idioma da aplicação é: <strong><%= locale %></strong></p>

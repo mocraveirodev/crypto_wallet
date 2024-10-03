@@ -1,0 +1,17 @@
+pt-BR:
+  hello: "Olá Mundo"
+  lang:
+    pt-BR: "Português do Brasil"
+  env:
+    dev: "Desenvolvimento"
+    test: "Teste"
+    prod: "Produção"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Excluir"
+    back: "Voltar"
+    coins: "Moedas"
+    mining_types: "Tipos de Mineração"
+    new_mining_type: "Novo Tio de Mineração"
+    new_coin: "Nova Moeda"

@@ -1,15 +1,18 @@
 module ApplicationHelper
+  def locale
+    I18n.locale == :en ? I18n.t("lang.en") : I18n.t("lang.pt-BR")
+  end
   def date_format_br(date_us)
     date_us.strftime("%d/%m/%Y")
   end
 
   def env_rails_version
     if Rails.env.development?
-      "Desenvolvimento"
+      I18n.t("env.dev")
     elsif Rails.env.test?
-      "Teste"
+      I18n.t("env.test")
     else
-      "Produção"
+      I18n.t("env.prod")
     end
   end
 end
