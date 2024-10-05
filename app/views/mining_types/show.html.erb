@@ -1,12 +1,12 @@
-<% content_for :title, t('show_mining_type') %>
+<% content_for :title, t('show.mining_type') %>
 
 <p style="color: green"><%= notice %></p>
 
 <%= render @mining_type %>
 
 <div>
-  <%= link_to t('edit_mining_type'), edit_mining_type_path(@mining_type) %> |
-  <%= link_to t('links.back'), mining_types_path %>
+  <%= link_to t('edit.mining_type'), edit_mining_type_path(@mining_type),class:"btn btn-primary" %>
+  <%= link_to t('links.back'), mining_types_path, class:"btn btn-secondary" %>
 
-  <%= button_to t('delete_mining_type'), @mining_type, method: :delete %>
+  <%= button_to t('delete.mining_type'), @mining_type, data: { turbo_method: :delete, turbo_confirm: t('message.confirm') }, class:"btn btn-danger mt-3" %>
 </div>

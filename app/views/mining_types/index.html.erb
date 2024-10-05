@@ -1,10 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, t('mining_types') %>
+<% content_for :title, "#{MiningType.model_name.human(count: @mining_types.count )}" %>
 
-<h1><%= t('mining_types') %></h1>
+<h1><%= "#{MiningType.model_name.human(count: @mining_types.count )}" %></h1>
 
-<table class="table table-hover table-striped table-bordered table-responsive">
+<%= link_to t('new.mining_type'), new_mining_type_path, class:"btn btn-primary"%>
+<%= link_to t('links.back'), welcome_index_path, class:"btn btn-secondary" %>
+
+<table class="table table-hover table-striped table-bordered table-responsive mt-3">
   <thead class="table-dark">
     <tr>
       <th><%= @mining_types.human_attribute_name(:description) %></th>
@@ -19,11 +22,9 @@
         <td><%= mining_type.acronym %></td>
         <td><%= link_to t('links.show'), mining_type %></td>
         <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type) %></td>
-        <td><%= link_to t('links.delete'), mining_type, data: { turbo_method: :delete, turbo_confirm: "Tem certeza que quer excluir?" } %></td>
+        <td><%= link_to t('links.delete'), mining_type, data: { turbo_method: :delete, turbo_confirm: t('message.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to t('new_mining_type'), new_mining_type_path%>
-<%= link_to t('links.back'), welcome_index_path%>

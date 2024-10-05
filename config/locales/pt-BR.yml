@@ -1,26 +1,29 @@
 pt-BR:
-  hello: "Olá Mundo"
+  hello: "Olá"
+  message:
+    welcome: "Este é o Cryptowallet, um app para você cadastrar e acompanhar suas criptomoedas!"
+    menu: "Para começar, selecione uma das opções abaixo:"
+    confirm: "Tem certeza?"
   default_name: "Usuário"
-  actual_date: "Data"
-  actual_lang: "Idioma"
-  lang: "Português do Brasil"
-  environment: "Ambiente"
-  coins: "Moedas"
-  mining_types: "Tipos de Mineração"
   env:
     dev: "Desenvolvimento"
     test: "Teste"
     prod: "Produção"
-  new_mining_type: "Novo Tipo de Mineração"
-  new_coin: "Nova Moeda"
-  edit_mining_type: "Editar Tipo de Mineração"
-  edit_coin: "Editar Moeda"
-  delete_mining_type: "Excluir Tipo de Mineração"
-  delete_coin: "Excluir Moeda"
-  show_mining_type: "Mostrar Tipo de Mineração"
-  show_coin: "Mostrar Moeda"
   links:
     edit: "Editar"
     show: "Mostrar"
     delete: "Excluir"
     back: "Voltar"
+    home: "[INÍCIO]"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de Mineração"
+  edit:
+    coin: "Editar Moeda"
+    mining_type: "Editar Tipo de Mineração"
+  delete:
+    coin: "Excluir Moeda"
+    mining_type: "Excluir Tipo de Mineração"
+  show:
+    coin: "Mostrar Moeda"
+    mining_type: "Mostrar Tipo de Mineração"

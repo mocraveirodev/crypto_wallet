@@ -1,15 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, t('coins') %>
+<% content_for :title, Coin.model_name.human(count: @coins.count) %>      
 
-<p><strong><%= t('actual_date') %>:</strong> <%= l(Date.today) %></p>
+<h1><%= "#{Coin.model_name.human(count: @coins.count)}" %></h1>
 
-<h1><%= t('coins') %></h1>
+<%= link_to t('new.coin'), new_coin_path, class:"btn btn-primary"%>
+<%= link_to t('links.back'), welcome_index_path, class:"btn btn-secondary" %>
 
-<%= link_to t('links.new_coin'), new_coin_path%>
-<%= link_to t('links.back'), welcome_index_path%>
-
-<table class="table table-hover table-striped table-bordered table-responsive">
+<table class="table table-hover table-striped table-bordered table-responsive mt-3">
   <thead class="table-dark">
     <tr>
       <th><%= @coins.human_attribute_name(:description) %></th>
@@ -28,7 +26,7 @@
         <td><%= coin.mining_type.description %></td>
         <td><%= link_to t('links.show'), coin %></td>
         <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
-        <td><%= link_to t('links.delete'), coin, data: { turbo_method: :delete, turbo_confirm: "Tem certeza que quer excluir?" } %></td>
+        <td><%= link_to t('links.delete'), coin, data: { turbo_method: :delete, turbo_confirm: t('message.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

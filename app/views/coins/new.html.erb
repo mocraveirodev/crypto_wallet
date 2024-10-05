@@ -1,11 +1,11 @@
-<% content_for :title, t('new_coin') %>
+<% content_for :title, t('new.coin') %>
 
-<h1><%= t('new_coin') %></h1>
+<h1><%= t('new.coin') %></h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to t('links.back'), coins_path %>
+  <%= link_to t('links.back'), coins_path, class:"btn btn-secondary" %>
 </div>

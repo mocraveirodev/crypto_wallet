@@ -1,17 +1,9 @@
-<p>
-  <%= link_to 'Português do Brasil', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-  <%= link_to 'English', root_path(locale: 'en') %>
-</p>
-
-<%= render "header" %>
-
-<ul>
-  <li>
-    <%= link_to t('coins'), coins_path, target: "_blank" %>
-  </li>
-  <li>
-    <%= link_to t('mining_types'), mining_types_path, target: "_blank" %>
-  </li>
-</ul>
+<div class="p-5 mb-4 bg-body-secondary rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold"><%= t('hello') %> <%= @nome %>!</h1>
+    <p class="col-md-8 fs-4"><%= t('message.welcome') %></p>
+    <hr class="my-4">
+    <p><%= t('message.menu') %></p>
+    <%= render "menu" %>
+  </div>
+</div>
