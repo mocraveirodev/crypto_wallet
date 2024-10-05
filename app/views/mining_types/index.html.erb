@@ -4,15 +4,15 @@
 
 <h1><%= t('mining_types') %></h1>
 
-<table>
-  <thead>
+<table class="table table-hover table-striped table-bordered table-responsive">
+  <thead class="table-dark">
     <tr>
       <th><%= @mining_types.human_attribute_name(:description) %></th>
       <th><%= @mining_types.human_attribute_name(:acronym) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="table-group-divider">
     <% @mining_types.each do |mining_type| %>
       <tr>
         <td><%= mining_type.description %></td>

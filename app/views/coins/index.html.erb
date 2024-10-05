@@ -9,8 +9,8 @@
 <%= link_to t('links.new_coin'), new_coin_path%>
 <%= link_to t('links.back'), welcome_index_path%>
 
-<table>
-  <thead>
+<table class="table table-hover table-striped table-bordered table-responsive">
+  <thead class="table-dark">
     <tr>
       <th><%= @coins.human_attribute_name(:description) %></th>
       <th><%= @coins.human_attribute_name(:acronym) %></th>
@@ -19,7 +19,7 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="table-group-divider">
     <% @coins.each do |coin| %>
       <tr>
         <td><%= coin.description %></td>
