@@ -33,7 +33,7 @@ gem "bootsnap", require: false
 
 gem "pry-rails"
 gem "tty-spinner"
-gem 'rails-i18n', '~> 7.0.0'
+gem 'rails-i18n', '~> 7.0.10'
 gem 'ostruct'
 gem 'bootstrap'
 gem 'sassc-rails'
